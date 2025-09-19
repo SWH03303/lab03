@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <section>
+        <img src="swin_logo.png" alt="Swinburne University of Technology">
+        <h1>CWA Help Desk Appointment</h1>
+        <form action="https://youtu.be/dQw4w9WgXcQ?si=qb4dyyNbKb2kIPYO" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                title="Must be at least 8 characters long and contain at least one letter and one number." required>
+            <br>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            
+            <label>Preferred Contact Method:</label>
+            <br>
+            <input type="radio" id="email" name="contact" value="email">
+            <label for="email">Email</label>
+            
+            <input type="radio" id="phone" name="contact" value="phone">
+            <label for="phone">Phone</label>
+            <br>
+            
+            <label>
+                <input type="checkbox" name="subscribe"> Subscribe to newsletter
+            </label>
+            <br>
+            
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+            <br>
+            
+            <input type="submit" value="Register">
+        </fieldset>
+        </form>
+    </section>
+
+    
+    <aside>
+    <h3>Related Articles</h3>
+        <ul>
+            <li><a href="#">How to Write Good HTML</a></li>
+            <li><a href="#">CSS Basics</a></li>
+        </ul>
+    </aside>
+</body>
+</html>
