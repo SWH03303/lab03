@@ -9,8 +9,101 @@
     <section>
         <img src="swin_logo.png" alt="Swinburne University of Technology">
         <h1>CWA Help Desk Appointment</h1>
+
+        <p>The Help Desk is located in ATC630. Open 10:30 to 19:00 Monday to Friday.</p>
+        <p>Check Blackboard for when CWA tutors will be there.</p>
+        
+        <!--   -->
         <form action="https://youtu.be/dQw4w9WgXcQ?si=qb4dyyNbKb2kIPYO" method="post">
         <fieldset>
+            <legend>Student Details</legend>
+
+            <label for="text">StudentID</label>
+            <input type="text" id="StudentID" name="StudentID"
+                pattern = "[0-9]{7,10}"  
+                minlength="7" maxlength="10"
+                required>
+            <br>
+            
+            <label for="GivenName">Given Name</label>
+            <input type="text" id="GivenName" name="GivenName" 
+                pattern = "[a-zA-Z]{0,15}" 
+                maxlength="15"
+                required>
+
+            <label for="FamilyName">Family Name</label>
+            <input type="text" id="FamilyName" name="FamilyName" 
+                pattern = "[a-zA-Z]{0,15}" 
+                maxlength="15"
+                required>
+            <br>  
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your unit</legend>
+
+            <input type="radio" id="COS10011" name="course" value="COS10011" required>
+            <label for="COS10011">COS10011</label>
+            
+            <input type="radio" id="COS60004" name="course" value="COS60004" required>
+            <label for="COS60004">COS60004</label>
+
+            <input type="radio" id="COS60006" name="course" value="COS60006" required>
+            <label for="COS60006">COS60006</label>
+            <br>
+
+            <label for="YourTutor">Your Tutor</label>
+            <select id="YourTutor" name="YourTutor" required>
+                <option value="" selected>Please select</option>
+                <option value="Bob">Bob</option>
+                <option value="John">John</option>
+                <option value="Jane">Jane</option>
+            </select>
+            <br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Issue</legend>
+
+            <label>
+                <input type="checkbox" name="HTML" checked> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="CSS"> CSS
+            </label>
+            <label>
+                <input type="checkbox" name="JavaScript"> JavaScript
+            </label>
+            <label>
+                <input type="checkbox" name="PHP"> PHP
+            </label>
+            <label>
+                <input type="checkbox" name="MySQL"> MySQL
+            </label>
+
+            <br>
+            <label for="Description">Description of Issue</label>
+            <br>
+            <textarea id="Description" name="Description" rows="4" cols="30"></textarea>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Date / Time</legend>
+            <label>
+                <input type="date" id="Date" name="Date" required>
+            </label>
+            <br>
+
+            <label>
+                <input type="time" id="Time" name="Time" required>
+            </label>
+            <br>
+            
+        </fieldset>
+        
+        <!-- <fieldset>
             <legend>User Information</legend>
             
             <label for="username">Username:</label>
@@ -50,18 +143,21 @@
             <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
             <br>
             
-            <input type="submit" value="Register">
-        </fieldset>
+            
+        </fieldset> -->
+
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset form">
         </form>
     </section>
 
     
-    <aside>
+    <!-- <aside>
     <h3>Related Articles</h3>
         <ul>
             <li><a href="#">How to Write Good HTML</a></li>
             <li><a href="#">CSS Basics</a></li>
         </ul>
-    </aside>
+    </aside> -->
 </body>
 </html>
